@@ -18,7 +18,6 @@ type Transaction struct {
 
 func NewTransaction(sellingOrder *Order, buyingOrder *Order, shares int, price float64) *Transaction {
 	total := float64(shares) * price
-
 	return &Transaction{
 		ID:           uuid.New().String(),
 		SellingOrder: sellingOrder,
