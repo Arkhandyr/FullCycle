@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"sync"
 
+	"github.com/Arkhandyr/FullCycle/internal/infra/kafka"
+	"github.com/Arkhandyr/FullCycle/internal/market/dto"
+	"github.com/Arkhandyr/FullCycle/internal/market/entity"
+	"github.com/Arkhandyr/FullCycle/internal/market/transformer"
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/devfullcycle/imersao13/go/internal/infra/kafka"
-	"github.com/devfullcycle/imersao13/go/internal/market/dto"
-	"github.com/devfullcycle/imersao13/go/internal/market/entity"
-	"github.com/devfullcycle/imersao13/go/internal/market/transformer"
 )
 
 func main() {
